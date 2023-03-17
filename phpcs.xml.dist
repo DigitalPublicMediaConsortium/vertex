@@ -1,0 +1,22 @@
+<ruleset>
+  <file>web/modules/custom/</file>
+  <file>web/themes/custom/</file>
+
+  <arg name="extensions" value="php,module,inc,install,test,profile,theme,css,info,txt,md"/>
+  <arg name="basepath" value="."/>
+  <arg name="colors"/>
+  <arg name="parallel" value="75"/>
+  <arg value="p"/>
+
+  <config name="drupal_core_version" value="10"/>
+  <config name="testVersion" value="8.1-" />
+
+  <rule ref="./vendor/drupal/coder/coder_sniffer/Drupal"/>
+  <rule ref="./vendor/drupal/coder/coder_sniffer/DrupalPractice"/>
+  <rule ref="./vendor/phpcompatibility/php-compatibility/PHPCompatibility"/>
+  <rule ref="Drupal.Commenting.VariableComment">
+    <!-- Remove after https://www.drupal.org/project/coder/issues/3313246 -->
+    <exclude name="Drupal.Commenting.FunctionComment.IncorrectParamVarName"/>
+    <exclude name="Drupal.Commenting.VariableComment.MissingVar"/>
+  </rule>
+</ruleset>

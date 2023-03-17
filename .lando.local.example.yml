@@ -1,0 +1,11 @@
+# Use this file to override/add to configurations from .lando.yml.
+
+# Only copy over necessary keys from the host.
+# This works around issues with the new VirtioFS directory sharing introduced in
+# Docker Desktop 4 for macOS.
+#
+# @see https://github.com/lando/lando/issues/3370#issuecomment-1189493088
+#
+# Rebuild is required after changing this setting.
+keys:
+  - id_rsa

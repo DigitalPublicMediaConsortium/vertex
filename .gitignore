@@ -1,0 +1,33 @@
+# macOS files.
+.DS_Store
+
+# IDE files.
+.idea
+
+# Lando local config.
+.lando.local.yml
+
+# Vendor files
+/vendor
+
+# Drupal core and contrib files.
+web/**/*
+
+!web/modules/
+!web/modules/custom
+!web/modules/custom/**
+
+!web/sites/
+!web/sites/default
+!web/sites/default/services.yml
+!web/sites/default/settings.local.example.php
+!web/sites/default/settings.php
+
+!web/themes/
+!web/themes/custom
+!web/themes/custom/**
+
+# Drupal's file directory.
+/web/sites/*/files/
+
+

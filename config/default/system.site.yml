@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: l58O_yEXSo-SeJi19LXdzTU1tNJG3lmnIhCitRkM1tk
+langcode: en
+uuid: 60537345-23b8-4bfc-8a1f-4a7b353dfbd9
+name: Vertex
+mail: admin@vertex.test
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: noreply@vertex.test

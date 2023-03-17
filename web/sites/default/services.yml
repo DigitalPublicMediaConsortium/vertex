@@ -1,0 +1,15 @@
+parameters:
+  cors.config:
+    enabled: true
+    # Specify allowed headers, like 'x-allowed-header'.
+    allowedHeaders: [ '*' ]
+    # Specify allowed request methods, specify ['*'] to allow all possible ones.
+    allowedMethods: [ 'GET' ]
+    # Configure requests allowed from specific origins.
+    allowedOrigins: [ '*' ]
+    # Set the Access-Control-Expose-Headers header.
+    exposedHeaders: false
+    # Set the Access-Control-Max-Age header.
+    maxAge: false
+    # Set the Access-Control-Allow-Credentials header.
+    supportsCredentials: false

@@ -1,0 +1,28 @@
+name: vertex
+# https://docs.lando.dev/drupal/config.html
+recipe: drupal10
+config:
+  php: '8.1'
+  webroot: web
+  # https://docs.lando.dev/php/config.html#using-xdebug
+  xdebug: true
+services:
+  appserver:
+    # https://docs.lando.dev/php/config.html#using-custom-config-files
+    config:
+      php: .lando/config/php.ini
+tooling:
+  # https://docs.lando.dev/drupal/tooling.html#using-drush
+  drush:
+    service: appserver
+    env:
+      DRUSH_OPTIONS_URI: "https://vertex.lndo.site/"
+  reset:
+    service: appserver
+    description: Sets up initial environment and site.
+    cmd:
+      - composer clear-cache
+      - composer install
+      - cp /app/web/sites/default/settings.local.example.php /app/web/sites/default/settings.local.php
+      - drush site:install minimal --config-dir=../config/default -y
+      - drush --uri="https://vertex.lndo.site/" uli
