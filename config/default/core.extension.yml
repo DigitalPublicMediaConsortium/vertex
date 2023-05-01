@@ -5,6 +5,7 @@ module:
   admin_toolbar_links_access_filter: 0
   admin_toolbar_search: 0
   admin_toolbar_tools: 0
+  admin_ui_only: 0
   block: 0
   breakpoint: 0
   config: 0

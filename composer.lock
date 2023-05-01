@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ef3528e7f11ed841959a8d309e70273",
+    "content-hash": "960de80c13033026b6bbe6338779b7ba",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1448,6 +1448,47 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
+            }
+        },
+        {
+            "name": "drupal/admin_ui_only",
+            "version": "dev-1.0.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/admin_ui_only.git",
+                "reference": "a3952dc099c533cc98fbf9ec2dcc64de7296d9ae"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.0.x": "1.0.x-dev"
+                },
+                "drupal": {
+                    "version": "1.0.x-dev",
+                    "datestamp": "1682895253",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "alexpott",
+                    "homepage": "https://www.drupal.org/user/157725"
+                }
+            ],
+            "description": "Prevents people from accessing the non admin site. Useful if you want to have anonymous access to an API like JSON:API or GraphQL.",
+            "homepage": "https://www.drupal.org/project/admin_ui_only",
+            "support": {
+                "source": "https://git.drupalcode.org/project/admin_ui_only"
             }
         },
         {
@@ -11056,6 +11097,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/admin_ui_only": 20,
         "phpcompatibility/php-compatibility": 20
     },
     "prefer-stable": true,

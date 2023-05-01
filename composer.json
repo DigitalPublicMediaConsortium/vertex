@@ -12,6 +12,7 @@
     "require": {
         "composer/installers": "^2.0",
         "drupal/admin_toolbar": "^3.3",
+        "drupal/admin_ui_only": "1.0.x-dev@dev",
         "drupal/config_split": "^1.9",
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-project-message": "^10.0",
